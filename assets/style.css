@@ -41,6 +41,12 @@ img {
     max-width: 100%;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 header img {
     height: 1.2rem;
     vertical-align: middle;
@@ -85,6 +91,7 @@ main {
 .bg_aqua {
     background-color: var(--bg-aqua);
     height: 650px;
+    margin-bottom: 3rem;
 }
 
 main h1 {
@@ -100,7 +107,7 @@ main h1 {
 
 .row {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .pad_top {
@@ -143,4 +150,87 @@ main h1 {
     background-color: var(--bg-aqua);
     color: var(--black-text);
     margin-top: 3rem;
+}
+
+.container h2 {
+    margin-bottom: 1.5rem;
+}
+
+.radio {
+    margin-bottom: 1rem;
+}
+
+.input {
+    margin-right: 1rem;
+}
+
+.col_3 {
+    width: calc((100% / 12) * 3);
+}
+
+.plan {
+    justify-content: space-between;
+}
+
+.single_user {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border: 1px solid lightgray;
+}
+
+.description {
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-top: 0;
+}
+
+.col_title {
+    margin-bottom: 1rem;
+}
+
+.price {
+    margin-bottom: 1rem;
+}
+
+.payment_time {
+    color: lightgray;
+    margin-bottom: 2rem;
+}
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.plan_detail i {
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.plan button {
+    width: 100%;
+    border-radius: 0.2rem;
+    border-width: 0rem;
+    appearance: none;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    color: var(--white-text);
+    background-color: var(--button-color);
+    margin: 1rem 0 2rem 0;
+}
+
+.col_3 button:hover {
+    cursor: pointer;
+    background-color: var(--button-color-hover);
+    transition: 0.5s;
+}
+
+.col_9 {
+    width: calc((100% / 12) * 9);
+}
+
+.plan_detail .col_9 {
+    font-size: 0.9rem;
 }
