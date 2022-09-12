@@ -6,7 +6,7 @@
 
 :root {
     --button-color: rgb(21, 21, 163);
-    --bg-aqua: rgb(137, 213, 188);
+    --bg-aqua: rgb(89, 175, 190);
     --basic-black: black;
     --white-text: white;
     --black-text: black;
@@ -17,12 +17,18 @@ header {
     height: 8vh;
     width: 100%;
     position: fixed;
+    top: 0;
     z-index: 1000;
     padding: 1rem;
+    background-color: white;
     font-family: 'Open Sans', sans-serif;
     -webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
+}
+
+body {
+    margin-top: 8vh;
 }
 
 .flex {
@@ -31,8 +37,11 @@ header {
     justify-content: space-between;
 }
 
-header img {
+img {
     max-width: 100%;
+}
+
+header img {
     height: 1.2rem;
     vertical-align: middle;
     margin-right: 0.5rem;
@@ -66,4 +75,72 @@ header button:hover {
     cursor: pointer;
     background-color: var(--button-color-hover);
     transition: 0.5s;
+}
+
+main {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.bg_aqua {
+    background-color: var(--bg-aqua);
+    height: 650px;
+}
+
+main h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.pad_top {
+    padding-top: 2rem;
+}
+
+.col_4 {
+    width: calc((100% / 12) * 4);
+}
+
+.col_8 {
+    width: calc((100% / 12) * 8);
+}
+
+.col_4 p {
+    margin-bottom: 2rem;
+}
+
+.col_4 button {
+    vertical-align: middle;
+    border-radius: 0.2rem;
+    border-width: 0rem;
+    appearance: none;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    color: var(--white-text);
+    background-color: var(--button-color);
+    margin-bottom: 2rem;
+}
+
+.col_4 button:hover {
+    cursor: pointer;
+    background-color: var(--button-color-hover);
+    transition: 0.5s;
+}
+
+#arrow {
+    font-size: 3rem;
+    font-weight: thick;
+    background-color: var(--bg-aqua);
+    color: var(--black-text);
+    margin-top: 3rem;
 }
