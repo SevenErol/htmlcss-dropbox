@@ -11,6 +11,9 @@
     --white-text: white;
     --black-text: black;
     --button-color-hover: rgb(43, 88, 193);
+    --border-grey: lightgrey;
+    --check-color: rgb(43, 88, 193);
+    --grey-text: lightgrey;
 }
 
 header {
@@ -162,7 +165,7 @@ main h1 {
 }
 
 .radio {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .input {
@@ -176,19 +179,28 @@ main h1 {
 .plan {
     gap: 1.5rem;
     flex-wrap: nowrap;
+    align-items: stretch;
+    margin-bottom: 3rem;
 }
 
 .single_user {
     text-align: center;
     padding: 1rem;
-    margin-top: 1.5rem;
-    border: 1px solid lightgray;
+    border-bottom: 1px solid var(--border-grey);
 }
 
 .description {
     padding: 1rem;
-    border: 1px solid lightgray;
-    border-top: 0;
+    position: relative;
+}
+
+.description:after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: var(--border-grey);
+    position: absolute;
+    bottom: -5px;
 }
 
 .col_title {
@@ -200,7 +212,7 @@ main h1 {
 }
 
 .payment_time {
-    color: lightgray;
+    color: var(--grey-text);
     margin-bottom: 2rem;
 }
 
@@ -239,4 +251,33 @@ main h1 {
 
 .plan_detail .col_9 {
     font-size: 0.9rem;
+}
+
+.recap {
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+.col_1 {
+    width: calc((100% / 12) * 1);
+}
+
+.col_11 {
+    width: calc((100% / 12) * 11);
+}
+
+.recap h4 {
+    margin-bottom: 2rem;
+}
+
+.recap .line {
+    margin-bottom: 1rem;
+}
+
+.fa-check {
+    color: var(--check-color);
+}
+
+.plan .col_4 {
+    border: 1px solid var(--border-grey);
 }
