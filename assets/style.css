@@ -232,7 +232,7 @@ main h1 {
     border-radius: 0.2rem;
     border-width: 0rem;
     appearance: none;
-    padding: 0.3rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     color: var(--white-text);
     background-color: var(--button-color);
@@ -280,4 +280,37 @@ main h1 {
 
 .plan .col_4 {
     border: 1px solid var(--border-grey);
+}
+
+.dtl_enterprise {
+    border: 1px solid var(--border-grey);
+    margin-bottom: 3rem;
+}
+
+.dtl_enterprise button {
+    border-radius: 0.2rem;
+    border-width: 0rem;
+    appearance: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: var(--white-text);
+    background-color: var(--button-color);
+}
+
+.dtl_enterprise button:hover {
+    cursor: pointer;
+    background-color: var(--button-color-hover);
+    transition: 0.5s;
+}
+
+.dtl_enterprise .row {
+    padding: 1.5rem;
+}
+
+.dtl_enterprise h3, .dtl_enterprise p {
+    margin-bottom: 1rem;
+}
+
+.dtl_enterprise h4 {
+    margin-bottom: 3rem;
 }
