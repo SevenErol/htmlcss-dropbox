@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --button-color: rgb(21, 21, 163);
+    --bg-aqua: rgb(137, 213, 188);
+    --basic-black: black;
+    --white-text: white;
+    --black-text: black;
+    --button-color-hover: rgb(43, 88, 193);
+}
+
+header {
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    padding: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 100%;
+    height: 1.2rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+header a {
+    margin-right: 0.5rem;
+    height: 100%;
+    text-decoration: none;
+    vertical-align: middle;
+    color: var(--black-text);
+}
+
+header a:hover {
+    border-bottom: 1px solid var(--basic-black);
+    cursor: pointer;
+}
+
+header button {
+    vertical-align: middle;
+    border-radius: 0.2rem;
+    border-width: 0rem;
+    appearance: none;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    color: var(--white-text);
+    background-color: var(--button-color);
+}
+
+header button:hover {
+    cursor: pointer;
+    background-color: var(--button-color-hover);
+    transition: 0.5s;
+}
