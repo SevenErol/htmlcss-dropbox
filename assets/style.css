@@ -316,7 +316,7 @@ main h1 {
 }
 
 .partner {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .partner_info {
@@ -341,4 +341,17 @@ main h1 {
     background-color: var(--basic-black);
     color: var(--white-text);
     transition: 0.5s;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap .col_4 {
+    padding: 1rem;
+}
+
+.wrap h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
