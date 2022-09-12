@@ -314,3 +314,31 @@ main h1 {
 .dtl_enterprise h4 {
     margin-bottom: 3rem;
 }
+
+.partner {
+    margin-bottom: 2rem;
+}
+
+.partner_info {
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.partner_info h3, .partner_info p {
+    margin-bottom: 2rem;
+}
+
+.partner_info button {
+    border-width: 1px;
+    appearance: none;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: var(--black-text);
+    border-radius: 0.1rem;
+}
+
+.partner_info button:hover {
+    background-color: var(--basic-black);
+    color: var(--white-text);
+    transition: 0.5s;
+}
