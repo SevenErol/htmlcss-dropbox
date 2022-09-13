@@ -565,8 +565,20 @@ p ~ .hidbutton:focus {
     width: calc((100% / 12) * 2);
 }
 
+.foot:after {
+    content: '';
+    width: 80px;
+    height: 1px;
+    background: var(--white-text);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
 .foot {
     justify-content: space-between;
+    position: relative;
+    padding-bottom: 2rem;
 }
 
 #site_footer a {
@@ -588,4 +600,17 @@ p ~ .hidbutton:focus {
 .foot h3 {
     margin-bottom: 2rem;
     font-size: 20px;
+}
+
+#language {
+    margin-top: 2rem;
+    color: var(--grey-text);
+}
+
+#language .fa-globe {
+    margin-right: 0.5rem;
+}
+
+#language .fa-chevron-down {
+    margin-left: 0.5rem;
 }
