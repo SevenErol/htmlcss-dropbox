@@ -108,7 +108,6 @@ main {
 .bg_aqua {
     background-color: var(--bg-aqua);
     height: 650px;
-    margin-bottom: 3rem;
 }
 
 main h1 {
@@ -125,6 +124,10 @@ main h1 {
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+#start_point {
+    padding-top: 8vh;
 }
 
 .pad_top {
@@ -163,10 +166,9 @@ main h1 {
 
 #arrow {
     font-size: 3rem;
-    font-weight: thick;
-    background-color: var(--bg-aqua);
     color: var(--black-text);
     margin-top: 3rem;
+    text-decoration: none;
 }
 
 .content {
