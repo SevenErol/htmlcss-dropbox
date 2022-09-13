@@ -14,6 +14,16 @@
     --border-grey: lightgrey;
     --check-color: rgb(43, 88, 193);
     --grey-text: lightgrey;
+    --grey-bg: lightgrey;
+    --bg-designit: #A2D39B;
+    --bg-arizona: #61082b;
+    --bg-florida: #0093ce;
+    --bg-topps: #ff1c1c;
+    --bg-bicycle: #d500d5;
+    --bg-hearst: #b4d0eb;
+    --bg-lonely: #0D2481;
+    --bg-clear: #ffd830;
+
 }
 
 header {
@@ -365,3 +375,100 @@ main h1 {
 #about_clients h2 {
     margin-bottom: 2rem;
 }
+
+.logos_flex {
+    display: flex;
+    margin-bottom: 8rem;
+}
+
+.partner_logos_left, .designit_central, .partner_logos_right {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% / 12) * 4);
+}
+
+.box {
+    width: calc((100% / 12) * 6);
+    position: relative;
+}
+
+.box:before {
+    content: "";
+    display: block;
+    padding-top: 100%; 
+}
+
+.box img {
+    width: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    filter: invert();
+    transform: translate(-50%, -50%);
+}
+
+.design {
+    background-color: var(--bg-designit);
+    border: 10px solid var(--bg-hearst);
+}
+
+.arizona {
+    background-color: var(--bg-arizona);
+}
+
+.florida {
+    background-color: var(--bg-florida);
+}
+
+.topps {
+    background-color: var(--bg-topps);
+}
+
+.designit_central {
+    padding: 1rem;
+    background-color: var(--grey-bg);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.designit_logo {
+    height: max-content;
+    margin-bottom: 1rem;
+    position: relative;
+    top: 10%;
+}
+
+.designit_logo:after {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: var(--basic-black);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.designit_logo img {
+    width: 12rem;
+}
+
+
+.designit_central p {
+    margin-bottom: 1rem;
+}
+
+.bicycle {
+    background-color: var(--bg-bicycle);
+}
+
+.hearst {
+    background-color: var(--bg-hearst);
+}
+
+.lonely {
+    background-color: var(--bg-lonely);
+}
+
+.clear {
+    background-color: var(--bg-clear);
+}
+
