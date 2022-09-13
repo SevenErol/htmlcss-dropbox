@@ -25,6 +25,9 @@
     --bg-clear: #ffd830;
     --banner-text: #61082b;
     --bg-banner: #b4d0eb;
+    --bg-black: black;
+    --bg-white: white;
+    --link-hover: aqua;
 }
 
 header {
@@ -551,5 +554,38 @@ p ~ .hidbutton:focus {
     display: none;
 }
 
+#site_footer {
+    background-color: var(--bg-black);
+    color: var(--white-text);
+    font-family: 'Open Sans', sans-serif;
+    padding: 3rem;
+}
+
+.col_2 {
+    width: calc((100% / 12) * 2);
+}
+
+.foot {
+    justify-content: space-between;
+}
+
+#site_footer a {
+    text-decoration: none;
+    color: var(--white-text);
+}
 
 
+#site_footer a:hover {
+    color: var(--link-hover);
+    transition: 0.5;
+    cursor: pointer;
+}
+
+.footlink {
+    margin-bottom: 1rem;
+}
+
+.foot h3 {
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
