@@ -196,7 +196,7 @@ li {
     transition: .4s;
 }
 
-header button {
+header .btn {
     vertical-align: middle;
     border-radius: 0.2rem;
     border-width: 0rem;
@@ -205,9 +205,10 @@ header button {
     font-size: 1rem;
     color: var(--white-text);
     background-color: var(--button-color);
+    text-decoration: none;
 }
 
-header button:hover {
+header .btn:hover {
     cursor: pointer;
     background-color: var(--button-color-hover);
     transition: 0.5s;
@@ -233,9 +234,10 @@ main h1 {
 
 .col_4 p {
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
-.col_4 button {
+.col_4 .btn {
     vertical-align: middle;
     border-radius: 0.2rem;
     border-width: 0rem;
@@ -244,10 +246,10 @@ main h1 {
     font-size: 1rem;
     color: var(--white-text);
     background-color: var(--button-color);
-    margin-bottom: 2rem;
+    text-decoration: none;
 }
 
-.col_4 button:hover {
+.col_4 .btn:hover {
     cursor: pointer;
     background-color: var(--button-color-hover);
     transition: 0.5s;
@@ -318,12 +320,16 @@ main h1 {
     margin-bottom: 1rem;
 }
 
+.plan_detail {
+    margin-bottom: 2rem;
+}
+
 .plan_detail i {
     width: 1rem;
     margin-right: 0.5rem;
 }
 
-.plan button {
+.plan .btn {
     width: 100%;
     border-radius: 0.2rem;
     border-width: 0rem;
@@ -332,13 +338,16 @@ main h1 {
     font-size: 1rem;
     color: var(--white-text);
     background-color: var(--button-color);
-    margin: 1rem 0 2rem 0;
 }
 
-.col_3 button:hover {
+.col_3 .btn:hover {
     cursor: pointer;
     background-color: var(--button-color-hover);
     transition: 0.5s;
+}
+
+.buynow {
+    margin-top: 2rem;
 }
 
 .plan_detail .col_9 {
@@ -371,7 +380,7 @@ main h1 {
     margin-bottom: 3rem;
 }
 
-.dtl_enterprise button {
+.dtl_enterprise .btn {
     border-radius: 0.2rem;
     border-width: 0rem;
     appearance: none;
@@ -379,9 +388,10 @@ main h1 {
     font-size: 1rem;
     color: var(--white-text);
     background-color: var(--button-color);
+    text-decoration: none;
 }
 
-.dtl_enterprise button:hover {
+.dtl_enterprise .btn:hover {
     cursor: pointer;
     background-color: var(--button-color-hover);
     transition: 0.5s;
@@ -417,16 +427,18 @@ main h1 {
     margin-bottom: 2rem;
 }
 
-.partner_info button {
+.partner_info .btn {
     border-width: 1px;
     appearance: none;
     padding: 0.5rem 1rem;
     background-color: white;
     color: var(--black-text);
     border-radius: 0.1rem;
+    text-decoration: none;
+    border: 1px solid black;
 }
 
-.partner_info button:hover {
+.partner_info .btn:hover {
     background-color: var(--basic-black);
     color: var(--white-text);
     transition: 0.5s;
@@ -564,16 +576,17 @@ main h1 {
     font-size: 24px;
 }
 
-.banner button {
+.banner .btn {
     border-width: 1px;
     appearance: none;
     padding: 0.5rem 1rem;
     background-color: white;
     color: var(--black-text);
     border-radius: 0.1rem;
+    text-decoration: none;
 }
 
-.banner button:hover {
+.banner .btn:hover {
     background-color: var(--basic-black);
     color: var(--white-text);
     transition: 0.5s;
