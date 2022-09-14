@@ -28,6 +28,8 @@
     --bg-black: black;
     --bg-white: white;
     --link-hover: aqua;
+    --droplink-hover: rgb(69, 128, 222);
+    --droplink-bg: #f9f9f9;
 }
 
 /* #region utilities  */
@@ -152,8 +154,9 @@ header img {
     background-color: var(--bg-white);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    min-width: 200px;
+    min-width:250px;
     padding-bottom: 0.5rem;
+    text-align: center;
 }
 
 .dropdown:hover .dropdown-content {
@@ -184,11 +187,11 @@ li {
 }
 
 .item:hover {
-    background-color: #f9f9f9;
+    background-color: var(--droplink-bg);
 }
 
 .droplink:hover {
-    color: rgb(69, 128, 222);
+    color: var(--droplink-hover);
     background-clip: text;
     transition: .4s;
 }
